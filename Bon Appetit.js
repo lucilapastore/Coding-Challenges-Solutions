@@ -24,7 +24,6 @@ function bonAppetit(bill, k, b) {
   }
 }
 
-
 function bonAppetit(bill, k, b) {
   let count = 0;
   for (let i = 0; i<bill.length; i++){
