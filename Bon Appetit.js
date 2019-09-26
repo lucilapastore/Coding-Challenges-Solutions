@@ -32,3 +32,12 @@ function bonAppetit(bill, k, b) {
   }
   console.log((b == count) ? "Bon Appetit" : b-count)
 }
+
+function bonAppetit(bill, k, b) {
+    let total = bill.reduce((a,b) => a+b);
+    
+    let anna = (total - bill[k]) / 2;
+    let diff = b - anna;
+    
+    console.log(b > anna ? diff : "Bon Appetit");
+}
