@@ -10,3 +10,25 @@ function bonAppetit(bill, k, b) {
         console.log(b - (price - bill[k]) / 2);
     }
 }
+
+function bonAppetit(bill, k, b) {
+  let totalAmount = 0;
+  for(var i=0; i < bill.length; i++){
+    totalAmount += bill[i];
+  }
+  let anna = (totalAmount - bill[k]) / 2; 
+  if (anna == b) {
+    console.log("Bon Appetit");
+  } else {
+    console.log(b - anna); 
+  }
+}
+
+
+function bonAppetit(bill, k, b) {
+  let count = 0;
+  for (let i = 0; i<bill.length; i++){
+    if (i!==k) {count += (bill[i]/2)}
+  }
+  console.log((b == count) ? "Bon Appetit" : b-count)
+}
